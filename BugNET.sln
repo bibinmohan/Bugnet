@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{DDC6CC4C-AABD-4AF2-A512-F48C9F964E05}"
 EndProject
@@ -43,11 +43,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugNET.BLL", "BugNET.BLL\Bu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugNET.DAL", "BugNET.DAL\BugNET.DAL.csproj", "{EFD03A92-584B-4930-9FB1-58DF64BF7FD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugNET.Tests", "BugNET.Tests\BugNET.Tests.csproj", "{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}"
-	ProjectSection(ProjectDependencies) = postProject
-		{4D25C25A-789A-462B-A026-269753C082BC} = {4D25C25A-789A-462B-A026-269753C082BC}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugNET.Common", "BugNET.Common\BugNET.Common.csproj", "{69F2F661-AA9A-4C9F-8217-6A22E8C66FEB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Provider.SqlDataProvider", "Library\Providers\DataProviders\SqlDataProvider\Provider.SqlDataProvider.csproj", "{DF8C87FA-3398-4AEE-99B0-D47F1831C158}"
@@ -56,29 +51,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugNET.MailboxReader", "Bug
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LumiSoft.Net", "LumiSoft.Net\LumiSoft.Net.csproj", "{7AB36CCF-5FFD-4780-A54E-A102ECA028B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugNET.MailboxReader.Tests", "BugNET.MailboxReader.Tests\BugNET.MailboxReader.Tests.csproj", "{FDF4A25C-52BE-46EC-AFC3-49965F085E16}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugNET.MercurialChangeGroupHook", "BugNET.MercurialChangeGroupHook\BugNET.MercurialChangeGroupHook.csproj", "{465F0938-C740-48E3-B4F5-ACCC05A61851}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4D25C25A-789A-462B-A026-269753C082BC} = {4D25C25A-789A-462B-A026-269753C082BC}
 	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BugNET.Database", "BugNET.Database\BugNET.Database.sqlproj", "{7F2EBE35-394E-4FB5-B2CB-3FDD0BEBF010}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildScripts", "BuildScripts", "{91C43B36-4C48-4C63-9FBD-0DD037F697CB}"
-	ProjectSection(SolutionItems) = preProject
-		BuildScripts\build.proj = BuildScripts\build.proj
-		BuildScripts\common.props = BuildScripts\common.props
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{3CD2E828-6524-4B01-9D80-095A167CD436}"
-	ProjectSection(SolutionItems) = preProject
-		Build.proj = Build.proj
-		.build\MSBuild.Community.Tasks.dll = .build\MSBuild.Community.Tasks.dll
-		.build\MSBuild.Community.Tasks.targets = .build\MSBuild.Community.Tasks.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{C3A7E838-782B-4F8D-A6B3-4A2C3A2A3480}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -251,19 +229,6 @@ Global
 		{EFD03A92-584B-4930-9FB1-58DF64BF7FD4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{EFD03A92-584B-4930-9FB1-58DF64BF7FD4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{EFD03A92-584B-4930-9FB1-58DF64BF7FD4}.Release|x86.ActiveCfg = Release|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Debug|.NET.Build.0 = Debug|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Release|.NET.ActiveCfg = Release|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A}.Release|x86.ActiveCfg = Release|Any CPU
 		{69F2F661-AA9A-4C9F-8217-6A22E8C66FEB}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{69F2F661-AA9A-4C9F-8217-6A22E8C66FEB}.Debug|.NET.Build.0 = Debug|Any CPU
 		{69F2F661-AA9A-4C9F-8217-6A22E8C66FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -316,19 +281,6 @@ Global
 		{7AB36CCF-5FFD-4780-A54E-A102ECA028B5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7AB36CCF-5FFD-4780-A54E-A102ECA028B5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7AB36CCF-5FFD-4780-A54E-A102ECA028B5}.Release|x86.ActiveCfg = Release|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Debug|.NET.ActiveCfg = Debug|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Debug|.NET.Build.0 = Debug|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Release|.NET.ActiveCfg = Release|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16}.Release|x86.ActiveCfg = Release|Any CPU
 		{465F0938-C740-48E3-B4F5-ACCC05A61851}.Debug|.NET.ActiveCfg = Debug|Any CPU
 		{465F0938-C740-48E3-B4F5-ACCC05A61851}.Debug|.NET.Build.0 = Debug|Any CPU
 		{465F0938-C740-48E3-B4F5-ACCC05A61851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -374,8 +326,6 @@ Global
 		{CA7E11AB-39FD-490A-A3A1-094BE9C5DB45} = {A8E5C2BE-1E6D-4BD7-9D56-F54406E49607}
 		{74376C46-4D55-4891-85D7-06A490FA9FD5} = {C9347B43-6712-404A-995F-808D3348405F}
 		{2D1294FE-A204-4F2C-B90C-8A041F44E12A} = {A8E5C2BE-1E6D-4BD7-9D56-F54406E49607}
-		{1D5AA1F7-C62A-4FD6-A85B-1BB60177297A} = {C3A7E838-782B-4F8D-A6B3-4A2C3A2A3480}
 		{DF8C87FA-3398-4AEE-99B0-D47F1831C158} = {B2D1A025-9A81-4F08-A0BA-ACE9086CEA7F}
-		{FDF4A25C-52BE-46EC-AFC3-49965F085E16} = {C3A7E838-782B-4F8D-A6B3-4A2C3A2A3480}
 	EndGlobalSection
 EndGlobal
