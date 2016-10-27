@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace LumiSoft.Net
-{
+{ 
+    /// TEST
     /// <summary>
     /// This enum holds SSL modes.
     /// </summary>
